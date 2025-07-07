@@ -4,14 +4,14 @@ let input = document.getElementById('inputBox'); // getting the input
 let buttons = document.querySelectorAll('button'); //Getting all the buttons
 
 
-let string = ""; 
+let string = "";  // Empty string to stock the values
 let arr = Array.from(buttons); // insert all the buttons in an array
 
-arr.forEach(button => {
-    button.addEventListener('click', (e) => {
+arr.forEach(button => { //Boucle on every button to see if it is clicked
+    button.addEventListener('click', (e) => { //ifa button clicked pick which button
         if(e.target.innerHTML == '='){ //read or watch if we clicked on =
             string = eval(string);
-            input.value = string;
+            input.value = string;  //putting the results string in the input
             console.log(e.target);
         }
 
