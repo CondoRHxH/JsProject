@@ -45,8 +45,8 @@ function winner() {
   }
 }
 
-function game(id) {
-  if (gameOver) return; // 🚫 متخليش حتى شي واحد يزيد يلعب
+function game(id) {  //Work every time we click
+  if (gameOver) return; // Not letting anyone play if the game is over 
 
   let element = document.getElementById(id);
 
